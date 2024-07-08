@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>headntails</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-700">
+    
+    <div class="flex justify-center p-4 mt-2
+     text-4xl font-semibold  font-mono text-zinc-50 tracking-tight">
+    <p>
+        Toss the coin and decide!
+    </p>
+    </div>
+
+    <div class="flex justify-center mt-4" >
+
+    <button onclick="updateMove()" class="js-text border-2  rounded-full h-40 w-40 p-4 mx-10 bg-yellow-500  text-3xl font-semibold text-zinc-50 shadow-xl hover:bg-yellow-600 duration-200 " ></button>
+
+    </div>
+
+
+    <div class="flex justify-center">
+        
+        <p class="js-decision-result text-2xl font-semibold  font-mono text-zinc-50 tracking-tight m-4 text-center">
+        </p>
+    </div>
+
+    
+    <div class= "flex justify-center mt-10">
+    <button onclick="document.querySelector('.js-text').innerHTML = ''; document.querySelector('.js-decision-result').innerHTML = ''; document.querySelector('.js-text').disabled = false; " 
+    class="border-2  rounded-2xl px-6 py-1  m-4 bg-yellow-500  text-xl font-semibold text-zinc-50 shadow-xl hover:bg-yellow-600 duration-200 ">Play again</button>
+    </div>
+    
+    <script src="headntails.js"></script>
+</body>
+</html>

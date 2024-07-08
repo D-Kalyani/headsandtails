@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>headntails</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-700">
+    
+    <div class="flex justify-center p-4 mt-2
+     text-4xl font-semibold  font-mono text-zinc-50 tracking-tight">
+    <p>
+        Select Heads or Tails
+    </p>
+    </div>
+
+    <div class="flex justify-center mt-4" >
+
+    <button onclick="game('Heads')" class="border-2  rounded-full h-40 w-40 p-4 mx-10 bg-yellow-500  text-3xl font-semibold text-zinc-50 shadow-xl hover:bg-yellow-600 duration-200 ">Heads</button>
+
+    <button onclick="game('Tails')" class="border-2  rounded-full h-40 w-40 p-4 mx-10 bg-yellow-500  text-3xl font-semibold text-zinc-50 shadow-xl hover:bg-yellow-600 duration-200 ">Tails</button>
+
+    </div>
+
+
+    <div class="flex justify-center">
+        
+        <p class="js-result text-2xl font-semibold  font-mono text-zinc-50 tracking-tight m-4 text-center">
+        </p>
+    </div>
+
+    <div class="flex justify-center" >
+        <p class="js-score text-2xl font-semibold  font-mono text-zinc-50 tracking-tight"> 
+        </p>
+    </div>
+
+    
+    <div class= "flex justify-center mt-10">
+    <button onclick="score.loss=0 ; score.wins = 0; localStorage.removeItem('score');  //on reset make everything 0 and delete the prev score in localStorage and then update current score
+    updateScore();
+    document.querySelector('.js-result').innerHTML = '';" 
+    class="border-2  rounded-2xl px-6 py-1  m-2 bg-yellow-500  text-xl font-semibold text-zinc-50 shadow-xl hover:bg-yellow-600 duration-200 ">Reset</button>
+    </div>
+    
+    <script src="headntails.js"></script>
+</body>
+</html>
